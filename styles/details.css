@@ -2,14 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
     min-height: 100vh; 
-    overflow-x: hidden; 
-    background: linear-gradient(to right  , #fbe698 , #5252e9);
-    color:#000000;
-
+    background: black;
 }
 
 
@@ -19,47 +13,37 @@ h1 {
 
 
 .container {
-    display: grid;
-    justify-content: space-between; 
-    grid-template-columns: 1fr 1fr; 
-    /* padding-top: 2%    ; */
-    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
 .userinfos {
-    display: flexbox;
-    text-align: center; 
-    border: 2px solid white; 
-    border-radius: 15px;
-    background: rgb(174, 162, 189);
-    margin: auto;
-    padding: 5%;
+    text-align: center;
+    flex-grow: 1; 
+    background: #1e4519;
+    margin: 2% 1%;
+    padding: 1% 0;
+    flex-wrap: wrap;
 }
 
-
-.relations {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0px;
-    border: 2px solid white; 
-    border-radius: 15px;
-    background: rgb(174, 162, 189);
-        text-align: center; 
+.userinfos:hover{
+    border: white solid;
 }
-
-
+marquee{
+    font-size: 32px;
+    font-weight: 700;
+}
 .center-button {
     display: flex;
     justify-content: center; 
-    width: 100%; 
     padding: 50px; 
 }
 
 
 .return-button {
-    background-color: rgb(229, 211, 163); 
+    background: #1e4519;
     color: white; 
     padding: 10px 20px;
     border: none; 
@@ -75,41 +59,20 @@ h1 {
 }
 
 .cc {
-    color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
     text-align: center; 
 }
 
 header{
-    background: linear-gradient(to right , #5252e9 , #fbe698);
+    background: #102e0c;
     color: #ffffff;
     width: 98%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     padding: 1%;
 }
 
-
-@media (min-width: 320px) and (max-width: 1440px){
-    .container {
-        flex-direction: column; 
-        grid-template-columns: 1fr;
-        padding-top: 170px;
-    }
-
-    .userinfos, .relations {
-        width: 80%; 
-        margin: 0 auto; 
-    }
-    body {
-        font-size: smaller; 
-    }
-
-    .head {
-        font-size: medium; 
-    }
-    
-    .return-button {
-        font-size: medium; 
-    }
-
+p{
+    color: #ffffff;
 }
+
 
