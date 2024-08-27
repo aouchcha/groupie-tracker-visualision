@@ -4,10 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	f "groupie-tracker/functions"
+	f "groupie-tracker-visualition/functions"
 )
-
-// Define a struct that matches the JSON structure
 
 func main() {
 	f.GetArtistData()
@@ -17,6 +15,6 @@ func main() {
 	http.HandleFunc("/styles/", f.ServeStyle)
 	http.HandleFunc("/", f.FirstPage)
 	http.HandleFunc("/artist", f.OtherPages)
-	fmt.Println("http://localhost:7878")
-	http.ListenAndServe(":7878", nil)
+	fmt.Println("http://localhost:8080")
+	http.ListenAndServe(":8080", nil)
 }
